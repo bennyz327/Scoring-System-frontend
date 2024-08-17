@@ -26,6 +26,19 @@ export default defineNuxtConfig({
         transformAssetUrls,
       },
     },
+    build: {
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        // 如果在超過 1000 可以使用 manualChunks 來分割
+        // output: {
+        //   manualChunks(id) {
+        //     if (id.includes('node_modules')) {
+        //       return id.toString().split('node_modules/')[1].split('/')[0].toString()
+        //     }
+        //   }
+        // },
+      }
+    },
   },
   compatibilityDate: '2024-04-03',
   nitro: {
