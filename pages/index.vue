@@ -44,6 +44,8 @@ watch(toSwitchRoleTarget, (value, oldValue) => {
     <v-row>
       <v-col cols="12" md="6">
         <v-card
+            loading
+            disabled
             append-icon="mdi:open-in-new"
             href="/"
             prepend-icon="mdi:account-group"
@@ -55,6 +57,8 @@ watch(toSwitchRoleTarget, (value, oldValue) => {
       </v-col>
       <v-col cols="12" md="6">
         <v-card
+            loading
+            disabled
             append-icon="mdi:open-in-new"
             href="/"
             prepend-icon="mdi:account-group"
@@ -81,14 +85,12 @@ watch(toSwitchRoleTarget, (value, oldValue) => {
       </v-col>
       <v-col cols="12" md="6">
         <v-card
-            loading
-            disabled
             append-icon="mdi:open-in-new"
-            href="/"
+            href="/race/overview"
             prepend-icon="mdi:tournament"
             rel="noopener"
             subtitle="查看賽事賽程表"
-            target="_blank"
+            target="_self"
             title="賽程表"
         />
       </v-col>
